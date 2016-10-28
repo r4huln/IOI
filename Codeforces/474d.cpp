@@ -39,7 +39,7 @@ int main(){
 		s[i] =  ( (s[i-1] + dp[i]) + M ) % M;
 	}
 	for(int i = k; i < 100001; i++){
-		dp[i] = ((dp[i-1] + dp[i-2]) + M) % M;
+		dp[i] = ((dp[i-1] + dp[i-k]) + M) % M;
 		s[i] =  ( (s[i-1] + dp[i]) + M ) % M;
 	}
 	int a, b;
